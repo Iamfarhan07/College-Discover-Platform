@@ -1,0 +1,75 @@
+datasource db {
+  provider = "postgresql"
+}
+
+generator client {
+  provider = "prisma-client"
+  output   = "../generated/client"
+}
+
+model User {
+  id           Int            @id @default(autoincrement())
+  name         String
+  email        String         @unique
+  passwordHash String
+  createdAt    DateTime       @default(now())
+  reviews      Review[]
+  savedColleges SavedCollege[]
+}
+
+model College {
+  id           Int            @id @default(autoincrement())
+  name         String
+  location     String
+  fees         Float
+  rating       Float
+  type         String
+  established  Int
+  overview     String
+  imageUrl     String?
+  createdAt    DateTime       @default(now())
+  courses      Course[]
+  placement    Placement?
+  reviews      Review[]
+  savedByUsers SavedCollege[]
+}
+
+model Course {
+  id        Int      @id @default(autoincrement())
+  name      String
+  duration  String
+  fees      Float
+  collegeId Int
+  college   College  @relation(fields: [collegeId], references: [id], onDelete: Cascade)
+}
+
+model Placement {
+  id             Int      @id @default(autoincrement())
+  averagePackage Float
+  highestPackage Float
+  topRecruiters  String[]
+  collegeId      Int      @unique
+  college        College  @relation(fields: [collegeId], references: [id], onDelete: Cascade)
+}
+
+model Review {
+  id        Int      @id @default(autoincrement())
+  comment   String
+  rating    Float
+  userId    Int
+  collegeId Int
+  createdAt DateTime @default(now())
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  college   College  @relation(fields: [collegeId], references: [id], onDelete: Cascade)
+}
+
+model SavedCollege {
+  id        Int      @id @default(autoincrement())
+  userId    Int
+  collegeId Int
+  savedAt   DateTime @default(now())
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  college   College  @relation(fields: [collegeId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, collegeId])
+}

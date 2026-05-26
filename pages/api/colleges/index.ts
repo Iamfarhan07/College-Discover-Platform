@@ -2,7 +2,7 @@ import { NextApiRequest, NextApiResponse } from "next";
 import { prisma } from "../../../lib/prisma";
 import { apiHandler, ApiError } from "../../../lib/apiHandler";
 import { listCollegesSchema } from "../../../lib/validators/college";
-import { Prisma } from "../../../node_modules/.prisma/client/client";
+import { Prisma } from "@prisma/client";
 
 async function handler(req: NextApiRequest, res: NextApiResponse) {
   if (req.method !== "GET") {

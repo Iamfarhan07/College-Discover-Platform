@@ -1,4 +1,4 @@
-import { PrismaClient } from "../generated/client/client";
+import { PrismaClient } from "../node_modules/.prisma/client/client";
 import { PrismaPg } from "@prisma/adapter-pg";
 import { Pool } from "pg";
 

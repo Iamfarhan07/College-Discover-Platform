@@ -520,6 +520,121 @@ async function main() {
         { comment: "Mass recruitment is common. One needs to study hard to get premium placements.", rating: 3.2 },
       ],
     },
+    {
+      name: "Indian Institute of Technology Madras (IIT Madras)",
+      location: "Chennai, Tamil Nadu",
+      fees: 900000,
+      rating: 4.9,
+      type: "Public",
+      established: 1959,
+      overview: "IIT Madras is a top-ranked engineering institute located in Chennai. It is well known for its world-class research facilities and strong industry connections.",
+      imageUrl: "https://images.unsplash.com/photo-1562774053-701939374585",
+      courses: [
+        { name: "B.Tech Computer Science and Engineering", duration: "4 years", fees: 950000 },
+        { name: "B.Tech Mechanical Engineering", duration: "4 years", fees: 900000 },
+      ],
+      placement: {
+        averagePackage: 2240000,
+        highestPackage: 13000000,
+        topRecruiters: ["Google", "Microsoft", "Intel", "Nvidia"],
+      },
+      reviews: [
+        { comment: "World class academic infrastructure.", rating: 5.0 },
+        { comment: "Campus is beautiful inside a national park.", rating: 4.8 },
+      ],
+    },
+    {
+      name: "Indian Institute of Technology Kharagpur (IIT Kharagpur)",
+      location: "Kharagpur, West Bengal",
+      fees: 820000,
+      rating: 4.8,
+      type: "Public",
+      established: 1951,
+      overview: "IIT Kharagpur is the oldest of the IITs, featuring a massive campus and the largest student body among technical institutes.",
+      imageUrl: "https://images.unsplash.com/photo-1541339907198-e08756dedf3f",
+      courses: [
+        { name: "B.Tech Computer Science and Engineering", duration: "4 years", fees: 860000 },
+        { name: "B.Tech Civil Engineering", duration: "4 years", fees: 820000 },
+      ],
+      placement: {
+        averagePackage: 1900000,
+        highestPackage: 12000000,
+        topRecruiters: ["Apple", "Nvidia", "Uber", "Microsoft"],
+      },
+      reviews: [
+        { comment: "Huge campus with boundless opportunities.", rating: 4.8 },
+        { comment: "Academic stress is real, but the environment helps.", rating: 4.6 },
+      ],
+    },
+    {
+      name: "National Institute of Technology Rourkela (NIT Rourkela)",
+      location: "Rourkela, Odisha",
+      fees: 530000,
+      rating: 4.4,
+      type: "Public",
+      established: 1961,
+      overview: "NIT Rourkela is a prestigious engineering institute known for its massive green campus and top-tier labs.",
+      imageUrl: "https://images.unsplash.com/photo-1507537297725-24a1c029d3ca",
+      courses: [
+        { name: "B.Tech Computer Science and Engineering", duration: "4 years", fees: 560000 },
+        { name: "B.Tech Electrical Engineering", duration: "4 years", fees: 530000 },
+      ],
+      placement: {
+        averagePackage: 1120000,
+        highestPackage: 4800000,
+        topRecruiters: ["Microsoft", "Amazon", "Deloitte", "Tata Consultancy Services"],
+      },
+      reviews: [
+        { comment: "Good hostel facilities and campus security.", rating: 4.5 },
+        { comment: "Very friendly coding environment.", rating: 4.3 },
+      ],
+    },
+    {
+      name: "Vellore Institute of Technology Chennai (VIT Chennai)",
+      location: "Chennai, Tamil Nadu",
+      fees: 810000,
+      rating: 4.0,
+      type: "Private",
+      established: 2010,
+      overview: "VIT Chennai is the second campus of Vellore Institute of Technology, offering modern state-of-the-art facilities in Vandalur.",
+      imageUrl: "https://images.unsplash.com/photo-1592280771190-3e2e4d571952",
+      courses: [
+        { name: "B.Tech Computer Science and Engineering", duration: "4 years", fees: 860000 },
+        { name: "B.Tech Electronics & Communication", duration: "4 years", fees: 810000 },
+      ],
+      placement: {
+        averagePackage: 800000,
+        highestPackage: 3600000,
+        topRecruiters: ["TCS", "Capgemini", "Infosys", "Cognizant"],
+      },
+      reviews: [
+        { comment: "Modern facilities, friendly environment.", rating: 4.2 },
+        { comment: "Hostel rules are strict like Vellore campus.", rating: 3.8 },
+      ],
+    },
+    {
+      name: "BITS Pilani (Hyderabad Campus)",
+      location: "Hyderabad, Telangana",
+      fees: 1820000,
+      rating: 4.6,
+      type: "Private",
+      established: 2008,
+      overview: "BITS Hyderabad is a modern campus of BITS Pilani, boasting equal academic rigor, excellent infrastructure, and strong placement records.",
+      imageUrl: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1",
+      courses: [
+        { name: "B.E. Computer Science", duration: "4 years", fees: 1900000 },
+        { name: "B.E. Chemical Engineering", duration: "4 years", fees: 1820000 },
+      ],
+      placement: {
+        averagePackage: 1480000,
+        highestPackage: 5600000,
+        topRecruiters: ["Microsoft", "Amazon", "Cisco", "Qualcomm"],
+      },
+      reviews: [
+        { comment: "Very modern campus. Equal status to Pilani campus.", rating: 4.8 },
+        { comment: "Excellent labs and library setup.", rating: 4.4 },
+      ],
+    },
   ];
 
   // 4. Create colleges, courses, placements, and reviews
